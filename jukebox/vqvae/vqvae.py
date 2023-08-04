@@ -38,7 +38,7 @@ def _loss_fn(loss_fn, x_target, x_pred, hps):
         return loss
     else:
         assert False, f"Unknown loss_fn {loss_fn}"
-
+#s
 class VQVAE(nn.Module):
     def __init__(self, input_shape, levels, downs_t, strides_t,
                  emb_width, l_bins, mu, commit, spectral, multispectral,
