@@ -1,7 +1,6 @@
 import torch
 import torch.nn.functional as F
-from jukebox.vqvae.vqvae import VQVAE  # Assuming this is the correct path for the VQVAE class
-
+from jukebox.vqvae.vqvae import VQVAE  
 
 from audio_diffusion.models import DiffusionAttnUnet1D
 from audio_diffusion.utils import ema_update
