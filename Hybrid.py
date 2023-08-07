@@ -47,5 +47,3 @@ if __name__ == "__main__":
 
     # Generate audio using the integrated model
     generated_audio = generate_audio_with_vqvae_ddim(vqvae_model, ddim_model, raw_audio_sample, timesteps)
-
-    # You can now save, play, or further process the generated_audio
