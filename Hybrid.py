@@ -1,8 +1,12 @@
 import torch
 import torch.nn.functional as F
 from jukebox.vqvae.vqvae import VQVAE  # Assuming this is the correct path for the VQVAE class
-from your_ddim_module import DiffusionAttnUnet1D  # Replace `your_ddim_module` with the correct module name/path
-# Any other utility functions and modules
+
+
+from audio_diffusion.models import DiffusionAttnUnet1D
+from audio_diffusion.utils import ema_update
+from viz.viz import audio_spectrogram_image
+
 
 # VQ-VAE encoding
 def encode_with_vqvae(vqvae, audio_input):
